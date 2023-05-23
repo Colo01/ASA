@@ -1,5 +1,13 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "node index.astro",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "ts-node": "ts-node"
   }
 }
