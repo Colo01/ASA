@@ -2,7 +2,6 @@
 import Layout from "../Layout/Layout.astro";
 ---
 <Layout>
-    <body>
         <section class="w-100% h-screen bg-[url(/img/hero.jpg)] bg-cover flex items-center text-center">
             <div class="">
                 <h2 class="text-5xl text-yellow-300 font-semibold leading-3">ACCION</h2>
@@ -11,15 +10,12 @@ import Layout from "../Layout/Layout.astro";
             </div>
         </section>
         <!--Script para menu en moviles-->
-        <script>
-            const selectElement = function(element) {
-                return document.querySelector(element);
-            }
-            let menuToggle = selectElement('.menu-toggle');
-            let body = selectElement('body');
+        <!-- <script>
+            return document.querySelector(element);
+            let menuToggle = document.querySelector('.menu-toggle');
+            let body = document.querySelector('body');
             menuToggle.addEventListener('click', function(){
                 body.classList.toggle('open');
             })
-        </script>
-    </body>
+        </script> -->
 </Layout>
