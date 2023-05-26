@@ -2,21 +2,24 @@
 import Layout from "../Layout/Layout.astro";
 ---
 <Layout>
-  <div class="login-box">
-    <img src="img/logologin.png" class="avatar">
-    <h1>ASA</h1>
-    <form>
-      <!-- Nombre de usuario -->
-      <label for="username">Nombre de usuario</label>
-      <input type="text" name="txtusuario" placeholder="Nombre de usuario">
-      <!-- contraseña -->
-      <label for="password">Contraseña</label>
-      <input type="password" name="txtpassword" placeholder="Contraseña">
-      <a href="index.html" type="submit" id="btnIngresar">Entrar</a>
-      <a href="#">Perdiste la contraseña?</a><br>
-      <a href="#">No tienes cuenta?</a>
-    </form>
+  <section class="w-100% h-screen bg-[url(/img/fondo.jpg)] bg-cover flex items-center">
+    <!-- linea -->
+    <div class="w-1 h-full bg-amber-400 ml-10"></div>
+    <!-- login -->
+  <div class="bg-amber-400 ml-20 rounded-2xl bg-opacity-80 w-1/4 h-100%">
+    <h1 class="flex justify-center text-xl mt-4 relative">Ingresar</h1>
+    <div class="p-4">
+      <form class="grid gap-4">
+        <!-- Nombre de usuario -->
+        <input type="text" name="txtusuario" placeholder="Nombre de usuario" class="rounded-2xl p-2">
+        <!-- contraseña -->
+        <input type="password" name="txtpassword" placeholder="Contraseña" class="rounded-2xl p-2">
+        <a href="/index" class="flex justify-center rounded-2xl p-2 bg-amber-950 text-amber-400 hover:bg-amber-900" type="submit">Entrar</a> 
+      </form>
+    </div>
+    <a href="#" class="p-6">Olvido la contraseña?</a><br>
   </div>
+</section>
 </Layout>
 
 
