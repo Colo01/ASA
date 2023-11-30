@@ -2,17 +2,112 @@
 import Layout from "../Layout/Layout.astro";
 ---
 <Layout>
-  <section class="w-100% h-screen bg-[url(/img/galletitas1.jpg)] bg-cover flex items-center">
-    <!-- linea -->
-    <div class="w-1 h-full bg-amber-400 ml-10"></div>
-    <!-- login -->
-  <div class="bg-amber-400 ml-20 rounded-2xl bg-opacity-80 w-1/4 h-100%">
-    <h1 class="flex justify-center text-xl mt-4 relative">Menus</h1>
-    <div class="grid gap-3 p-4">
-      <button class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900">Campañas</button>
-      <a href="/panelAdmin" class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"><button>Usuarios</button></a>
-      <button class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900">Turnos</button>
-    </div>
-  </div>
-</section>
+    <section
+        class="w-100% h-screen bg-[url(/img/galletitas1.jpg)] bg-cover flex items-center"
+    >
+        <div class="w-1 h-full bg-amber-400 ml-10"></div>
+        <div class="bg-amber-400 ml-20 rounded-2xl bg-opacity-80 w-1/4 h-100%">
+            <h1 class="flex justify-center text-xl mt-4 relative">Menus</h1>
+            <div class="grid gap-3 p-4">
+                <button
+                    id="campanias"
+                    class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >Campañas</button
+                >
+                <button
+                    id="usuarios"
+                    class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >Usuarios</button
+                >
+                <button
+                    id="turnos"
+                    class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >Turnos</button
+                >
+            </div>
+        </div>
+        <div
+            id="fUsuarios"
+            style="display: none;"
+            class="bg-amber-400 ml-10 rounded-2xl bg-opacity-80 w-1/4 h-100%"
+        >
+            <h2 class="flex justify-center text-xl mt-4 relative">Funciones</h2>
+            <ul class="grid gap-3 p-4">
+                <a href=""
+                    ><li
+                        class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >
+                        Admitir Usuarios
+                    </li></a
+                >
+                <a href=""
+                    ><li
+                        class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >
+                        Eliminar Usuarios
+                    </li></a
+                >
+                <a href=""
+                    ><li
+                        class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >
+                        Modificar Usuarios
+                    </li></a
+                >
+                <a href="/panelAdmin"
+                    ><li
+                        class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >
+                        Listar usuarios
+                    </li></a
+                >
+            </ul>
+        </div>
+        <div
+            id="fCampanias"
+            style="display: none;"
+            class="bg-amber-400 ml-10 rounded-2xl bg-opacity-80 w-1/4 h-100%"
+        >
+            <h2 class="flex justify-center text-xl mt-4 relative">Funciones</h2>
+            <ul class="grid gap-3 p-4">
+                <a href=""
+                    ><li
+                        class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >
+                        Alta Campania
+                    </li></a
+                >
+                <a href=""
+                    ><li
+                        class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >
+                        Baja Campania
+                    </li></a
+                >
+            </ul>
+        </div>
+        <div
+            id="fTurnos"
+            style="display: none;"
+            class="bg-amber-400 ml-10 rounded-2xl bg-opacity-80 w-1/4 h-100%"
+        >
+            <h2 class="flex justify-center text-xl mt-4 relative">Funciones</h2>
+            <ul class="grid gap-3 p-4">
+                <a href=""
+                    ><li
+                        class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >
+                        Alta Turno
+                    </li></a
+                >
+                <a href=""
+                    ><li
+                        class="rounded-2xl p-2 flex justify-center bg-amber-950 text-amber-400 hover:bg-amber-900"
+                    >
+                        Baja Turno
+                    </li></a
+                >
+            </ul>
+        </div>
+    </section>
 </Layout>
